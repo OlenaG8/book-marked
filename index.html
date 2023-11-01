@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BookMarked</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <img src="images/book-icon.png">
+            <h1>BookMarked</h1>
+            <textarea id="input-quotes" name="Quotes" placeholder="Paste your favourite quote here" rows="4" cols="50"></textarea>
+            
+            <div class="book-details">
+                <input type="text" id="input-book-name" placeholder="Book name">
+                <input type="text" id="input-author" placeholder="Author">
+            </div>
+            
+            <button id="save-button">Save</button>
+            <h3>- QUOTES -</h3>
+
+        </div>
+
+        <div class="quotes-container">
+
+            <ul id="quotes-list">
+            </ul>
+
+        </div>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
