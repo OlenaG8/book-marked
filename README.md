@@ -9,8 +9,9 @@ Requirements:
 <li>Update in realtime</li>
 <li>Add additional inputs</li>
 <li>Reverse the order etc.</li>
+<br>
+![image](https://github.com/OlenaG8/book-marked/assets/135965492/04d170d4-0f89-40b0-9625-b1df5528c02c)
 
-![image](https://github.com/OlenaG8/book-marked/assets/135965492/1582544b-2ffc-42d4-b819-a997069942cd)
 
 
 <h1>About Scrimba</h1>
