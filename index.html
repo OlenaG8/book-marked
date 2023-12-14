@@ -13,28 +13,33 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="container">
-
-            <img src="images/book-icon.png">
-            <h1>BookMarked</h1>
-            <textarea id="input-quotes" name="Quotes" placeholder="Paste your favourite quote here" rows="4" cols="50"></textarea>
-            
-            <div class="book-details">
-                <input type="text" id="input-book-name" placeholder="Book name">
-                <input type="text" id="input-author" placeholder="Author">
+        <header>
+            <div class="container">
+                <img src="images/book-icon.png">
+                <h1>BookMarked</h1>
+                <textarea id="input-quotes" name="Quotes" placeholder="Paste your favourite quote here" rows="4" cols="50"></textarea>
+                    
+                <div class="details-inputs">
+                    <input type="text" id="input-book-name" placeholder="Book name">
+                    <input type="text" id="input-author" placeholder="Author">
+                </div>
+                    
+                <button id="save-button">Save</button>
+                <h3>- QUOTES -</h3>
             </div>
-            
-            <button id="save-button">Save</button>
-            <h3>- QUOTES -</h3>
+        </header>
 
-        </div>
+        <section>
+            <div class="container">
 
-        <div class="quotes-container">
+                <ul class="quotes-list" id="quotes-list">
+                    <!-- Quote goes here -->
+                </ul>
+    
+            </div>
 
-            <ul id="quotes-list">
-            </ul>
+        </section>
 
-        </div>
         <script src="index.js" type="module"></script>
     </body>
 </html>

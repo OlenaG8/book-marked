@@ -6,74 +6,76 @@ html, body {
     user-select: none;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    max-width: calc(100% - 100px);
-    margin: 30px auto;
+/* typography */
+
+h1, h3 {
+    margin: 10px auto;
+}
+
+textarea, input[type="text"], button, ul li {
+    font-size: 20px;
+    text-align: center;
+    font-family: inherit;
+}
+
+button {
+    font-weight: bold;
+}
+
+/* layout */
+
+header {
+    margin: 20px auto;
+    text-align: center;
 }
 
 img {
     width: 200px;
-    margin: 10px auto;
 }
 
-h1, h3 {
-    margin: 15px auto;
+.container {
+    width: calc(100% - 200px);
+    margin: 0 auto;
+}
+
+.details-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* input styling */
+
+textarea, input {
+    color:#866042;
+    background-color: #DCE1EB;
+
+    outline: 0px;
+    resize: none;
 }
 
 textarea {
-    color:#866042;
-    background-color: #DCE1EB;
-    border: 0;
-    padding: 15px;
-    border-radius: 8px;
-    resize: none;
-
-    font-size: 20px;
-    text-align: center;
-    font-family: inherit;
-
-    height: 100px;
-    outline: 0px;
+    width: calc(100% - 30px);
+    max-height: 10%;
+    vertical-align: top;
 }
 
-.book-details {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-}
-
-.book-details input {
-    flex: 1;
+input {
+    width: 47%;
     margin-top: 10px;
-    outline: 0px;
+}
 
-    color:#866042;
-    background-color: #DCE1EB;
+textarea, input, button {
     border: 0;
     padding: 15px;
     border-radius: 8px;
-
-    font-size: 20px;
-    text-align: center;
-    font-family: inherit;
 }
 
-#input-book-name {
-    margin-right: 10px;
-}
+/* save button */
 
 button {
     color:#866042;
     background-color: #F4C263;
-    border: 0;
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    font-family: inherit;
+    width:100%;
     margin-top: 10px;
 }
 
@@ -82,17 +84,10 @@ button:hover {
     cursor: pointer;
 }
 
-.quotes-container {
-    display: flex;
-    flex-direction: column;
-    max-width: calc(100% - 100px);
-    margin: 15px auto;
-}
+/* list of quotes */
 
 ul {
     list-style: none;
-    display: flex;
-    flex-direction: column;
     padding: 0;
 }
 
@@ -102,11 +97,7 @@ ul li {
     padding: 15px;
     
     border-radius: 6px;
-    font-size: 20px;
-    text-align: center;
-    text-wrap: pretty;
-    
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .details {

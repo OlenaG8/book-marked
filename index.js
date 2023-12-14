@@ -71,22 +71,35 @@ function clearInputField() {
 
 function appendQuote(quote) {
     let quoteValue = quote[1]
-    
-    let newQuote = document.createElement("li")
-    
-    newQuote.innerHTML = `
-    <div class="details">
-        <h5>Book name: ${quoteValue.name}</h5>
-        <h5>Author: ${quoteValue.author}</h5>
-    </div>
-        <p>${quoteValue.quote}</p>
-        `
-    
-    quotesList.insertBefore(newQuote, quotesList.firstChild)
+    let newQuote = createQuoteElement(quoteValue)
+
+    quotesList.insertBefore(newQuote, quotesList.firstChild);
     
     newQuote.addEventListener("dblclick", function() {
         let exactLocationInBD = ref(database, `QuotesList/${quote[0]}`)
         remove(exactLocationInBD)
     })
+}
+
+function createQuoteElement(quoteValue) {
+    let newQuote = document.createElement("li")
+    let details = document.createElement("div")
+    details.className = "details"
+
+    let bookName = document.createElement("h5")
+    bookName.textContent = `Book name: ${quoteValue.name}`
+
+    let author = document.createElement("h5")
+    author.textContent = `Author: ${quoteValue.author}`
+    
+    let quoteText = document.createElement("p")
+    quoteText.textContent = quoteValue.quote
+
+    details.appendChild(bookName)
+    details.appendChild(author)
+    newQuote.appendChild(details)
+    newQuote.appendChild(quoteText)
+
+    return newQuote
 }
 
