@@ -9,8 +9,9 @@ Requirements:
 <li>Update in realtime</li>
 <li>Add additional inputs</li>
 <li>Reverse the order etc.</li>
-<br>
-![image](https://github.com/OlenaG8/book-marked/assets/135965492/04d170d4-0f89-40b0-9625-b1df5528c02c)
+
+![image](https://github.com/OlenaG8/book-marked/assets/135965492/a22bab8b-a2b6-4fa8-80a5-424b11bf679d)
+
 
 
 
